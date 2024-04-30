@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huye Sports Login</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #211b1b;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header img {
+            width: 50px;
+            margin-right: 20px;
+        }
+        .container {
+            max-width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #c1e0e5;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 85%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .forgot-password {
+            display: inline-block;
+            font-size: 14px;
+        }
+        .create-account {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .create-account a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .btn {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1><img src="images/icon.png" alt="icon"> Huye Sports Login</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Login</h2>
+            <form action="SignIn.php" class="form" method="POST" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="keep-signed-in">
+                    <label for="keep-signed-in">Keep me signed in</label>
+                </div>
+                <input type="submit" value="Sign In" class="btn">
+            </form>
+            <div class="forgot-password">
+                <a href="updateUsername.html">Forgot username?</a> or <a href="updatePassword.html">Forgot password?</a>
+            </div>
+            <div class="create-account">
+                <p>No account? <a href="SignUp.html">Create an account.</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

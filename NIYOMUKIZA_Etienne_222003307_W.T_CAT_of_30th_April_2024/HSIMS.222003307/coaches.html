@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaches - Sports Synergy</title>
+    <style>
+        /* Internal CSS styles */
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+      
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            width: 50px; /* Adjust the width of the icon */
+            margin-right: 20px; /* Add some spacing between the icon and text */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .search-engine {
+            margin-right: 20px;
+        }
+
+        .search-engine input[type="text"] {
+            padding: 5px;
+            width: 150px;
+        }
+
+        .search-engine button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-engine button:hover {
+            background-color: #45a049;
+        }
+
+        .signout {
+            margin-right: 20px;
+        }
+
+        .signout a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #f44336;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signout a:hover {
+            background-color: #d32f2f;
+        }
+
+        .signin {
+            margin-right: 10px;
+        }
+
+        .signin a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signin a:hover {
+            background-color: #45a049;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .center-heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .left-side {
+            width: 30%;
+            background-color: #acd4e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-side h2 {
+            margin-bottom: 20px;
+        }
+
+        .left-side button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .left-side button:hover {
+            background-color: #0056b3;
+        }
+
+        .right-side {
+            width: 65%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-side h2 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed; /* or position: absolute; */
+            bottom: 0;
+            width: 100%; /* Ensure it spans the entire width */
+}
+        
+
+        .social-media {
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header> 
+        <h1><img src="images/icon.png" alt="icon"> Huye Sports</h1>
+        <div class="search-engine">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+</header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Sports Synergy</a>
+                <div class="dropdown-content">
+                    <a href="athletes.php">Athletes</a>
+                    <a href="teams.php">Teams</a>
+                    <a href="coaches.php">Coaches</a>
+                    <a href="training_facilities.php">Training Facilities</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Sports Activities</a>
+                <div class="dropdown-content">
+                    <a href="competitions.php">Competitions</a>
+                    <a href="matches.php">Matches</a>
+                    <a href="matchOfficialsUpdates.php">Match Officials</a>
+                </div>
+            </li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </nav>
+      
+        <div class="signout">
+            <a href="signout.html">Sign Out</a>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main>
+        <div class="container">
+            <!-- Left side with buttons -->
+            <div class="left-side">
+                <h2>Coaches</h2>
+                <button onclick="location.href='athletes.html'">Athletes</button>
+                <button onclick="location.href='training_facilities.html'">Training Facilities</button>
+                <button onclick="location.href='teams.html'">Teams</button>
+            </div>
+            <!-- Right side with coaching staff overview -->
+            <div class="right-side">
+                <h2>Coaching Staff Overview</h2>
+                <!-- Add your coaching staff overview here -->
+                <p>Dear Friend,
+
+                    I hope this letter finds you well. Over the past week, I've been reflecting on my life since our paths crossed, and I've come to a sobering realization: I feel like I've lost sight of who I truly am. It's a disconcerting feeling, one that's left me feeling weaker than ever before. I find myself struggling to make decisions, to respect not only your choices but also those of my other friends. The mistakes I've made, often in the name of love, have taken their toll, and I'm starting to question if the love I've been chasing even exists.
+                    
+                    In the midst of all this, I've neglected my dreams and distanced myself from my family and faith. I've even found myself slipping into unhealthy habits, all in a misguided attempt to find solace away from you, albeit temporarily. But even that escape proves futile, as I always find myself returning to you.
+                    
+                    As a person of faith, this inner turmoil has left me devoid of peace. It's become clear to me that I need to reclaim control of my life. Nelly, I've held onto the hope that maybe you would reciprocate my feelings, but I've come to accept that perhaps that's not the case. While I value our friendship and agree that it's worth preserving, I can't ignore the truth that my heart remains entangled in emotions that complicate our connection.
+                    
+                    Therefore, I believe it's best for us to part ways for now. Let's each pursue our own paths, allowing God to guide us where He sees fit. If there's a future for us beyond friendship, it will be in His hands, not ours. I encourage you to embrace all the joys life has to offer and to allow me the space I need to rediscover myself.
+                    
+                    Thank you for your understanding, and I sincerely wish you all the best.
+                    
+                    Warm regards,
+                    [Your Name]Add details about coaching staff here...
+                
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+in:sent 
+1 of 27
+Confession.
+
+Niyomukiza Etienne <niyomukizaetienne250@gmail.com>
+17:50 (3 hours ago)
+to nelio0299
+
+Dear Kampire, 
+
+  
+
+I hope this email finds you well. Over the past week, I've been reflecting on my life since our paths crossed, and I've come to a sobering realization: I feel like I've lost sight of who I truly am. It's a disconcerting feeling, one that's left me feeling weaker than ever before. I find myself struggling to make decisions, to respect not only your choices but also those of mine. The mistakes I've made, often in the name of love, have taken their toll, and I'm starting to question whether I am loving or am playing madness, by throwing my future out there. 
+
+  
+
+During all this, I've neglected my dreams and distanced myself from my family (GNC) and faith too. I've even found myself slipping into unhealthy habits, the shameful ones, all in an unwarranted attempt to find consolation away from you, though temporarily. But even that escape proves fruitless, worthless or useless, as I always find myself returning to you. 
+
+  
+
+As a person of faith, this inner disorder has left me lacking peace. It's become clear to me that I need to reclaim control of my life and respect the woman who has been doing the same thing to me for zero earning. Nelly, I've held onto the hope that maybe you would reciprocate my feelings, because I value your attitudes which are every man’s dream, but I've come to accept that perhaps I am not the one in anyways, which I hope we are now reaching common understanding. While I value the moment we’ve been sharing as a friend, your respect and sacrifices you made (a lot of them) since day one and I agree that it’s worth preserving, I can’t ignore the truth that my heart remains involved in emotions that complicate our friendship, and you know that I have tried harder and hader. 
+
+  
+
+Therefore, I believe it's best for us to part ways for now. Let's each pursue our own paths, goals and likes, allowing God to guide us where He sees fit. If there's a future for us beyond being classmates or choirmates, it will be in His hands, not ours. I encourage you to embrace all the joys life has to offer to you to the maximum and to allow me the space because I need to rediscover myself. 
+
+  
+
+Thank you for your understanding, and I sincerely wish you all the best. 
+
+  
+
+I loved and I will Always, 
+
+Your Man Stephan  
+
+</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sports Synergy. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
