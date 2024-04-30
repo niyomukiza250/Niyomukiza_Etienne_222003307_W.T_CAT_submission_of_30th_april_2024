@@ -1,8 +1,14 @@
 # Niyomukiza_Etienne_222003307_W.T_CAT_submission_of_30th_april_2024
 
- 
+DATABASE CREDENTIALS
+      USERNAME: niyomukizaetienne 
+      PASSWORD: 222003307
+      DATABASE: huyesportsdb
 
-This detailed documentation provides a comprehensive explanation of the Huye Sports Management System  
+
+
+
+Here is detailed documentation which provides a comprehensive explanation of the Huye Sports Management System  
 
  
 
