@@ -1,9 +1,9 @@
 # Niyomukiza_Etienne_222003307_W.T_CAT_submission_of_30th_april_2024
 
 DATABASE CREDENTIALS
-      USERNAME: niyomukizaetienne 
-      PASSWORD: 222003307
-      DATABASE: huyesportsdb
+      USERNAME: niyomukizaetienne, 
+      PASSWORD: 222003307,
+      DATABASE: huyesportsdb,
 
 
 
